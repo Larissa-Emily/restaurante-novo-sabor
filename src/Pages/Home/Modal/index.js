@@ -89,7 +89,6 @@ const MesaModal = ({
         throw new Error(`Erro do servidor: ${errorData.message}`);
       }
 
-      const data = await response.json();
       toast.success("Pedido criado com sucesso!");
       adicionarPedido(mesaAtual.id, itensSelecionados);
       setSearchTerm("");

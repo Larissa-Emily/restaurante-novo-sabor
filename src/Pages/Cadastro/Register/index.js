@@ -57,7 +57,6 @@ export default function Register() {
           throw new Error(`Erro na resposta da API: ${response.statusText}`);
         }
 
-        const data = await response.json();
         toast.success("Dados salvos com sucesso!");
 
         // Limpar campos após o envio
